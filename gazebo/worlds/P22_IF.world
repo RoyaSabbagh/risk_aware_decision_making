@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+    <world name="world">
+      <gui>
+        <camera name="user_camera">
+          <pose>4.4 5 6.4 0 1.57 1.57</pose>
+        </camera>
+      </gui>
+      <gravity>0 0 -9.8</gravity>
+      <physics default="0" name="default_physics" type="ode">
+          <max_step_size>0.001</max_step_size>
+          <real_time_factor>1</real_time_factor>
+          <real_time_update_rate>1000</real_time_update_rate>
+      </physics>
+      <include>
+        <uri>model://ground_plane</uri>
+      </include>
+
+      <model name='camera1'>
+      <static>true</static>
+      <pose>4.4 5 6.4 0 1.57 1.57</pose>
+      <link name='link1'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name='my_camera1' type='camera'>
+          <camera>
+            <save enabled="true">
+              <path>/home/roya/catkin_ws/src/risk_aware_planning/src/results/camera1</path>
+            </save>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>1920</width>
+              <height>1080</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>50</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+        </sensor>
+      </link>
+    </model>
+
+    <model name='camera2'>
+      <static>true</static>
+      <pose>1.86539 6.39185 2.8575 0 0.657796 -0.349976</pose>
+      <link name='link2'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name='my_camera2' type='camera'>
+          <camera>
+            <save enabled="true">
+              <path>/home/roya/catkin_ws/src/risk_aware_planning/src/results/camera2</path>
+            </save>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>1920</width>
+              <height>1080</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>50</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+        </sensor>
+      </link>
+    </model>
+
+    <model name='camera3'>
+      <static>true</static>
+      <pose>6.62566 6.24361 2.60285 0 0.541796 -2.60116</pose>
+      <link name='link3'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name='my_camera3' type='camera'>
+          <camera>
+            <save enabled="true">
+              <path>/home/roya/catkin_ws/src/risk_aware_planning/src/results/camera3</path>
+            </save>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>1920</width>
+              <height>1080</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>50</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+        </sensor>
+      </link>
+    </model>
+
+
+      <actor name="actor">
+        <pose>5 5.7 0.65 1.57 0 0</pose>
+        <skin>
+          <filename>stand.dae</filename>
+          <scale>0.7</scale>
+        </skin>
+        <animation name="stand_up">
+          <filename>stand_up.dae</filename>
+        </animation>
+        <animation name="walking">
+          <filename>walk.dae</filename>
+          <scale>1.000000</scale>
+          <interpolate_x>true</interpolate_x>
+        </animation>
+        <script>
+          <loop>false</loop>
+          <auto_start>false</auto_start>
+          <trajectory id="0" type="stand_up"/>
+          <trajectory id="1" type="walking"/>
+        </script>
+        <plugin name="actor_plugin" filename="/home/roya/catkin_ws/src/lib/libactorplugin.so">
+          <target>3 -2 1.02</target>
+          <target_weight>1.15</target_weight>
+          <obstacle_weight>1.8</obstacle_weight>
+          <animation_factor>5.1</animation_factor>
+          <ignore_obstacles>
+            <model>P22_IF_walls</model>
+            <model>CGMClassic</model>
+            <model>VisitorChair_1</model>
+            <model>VisitorChair_2</model>
+            <model>Chair</model>
+            <model>P22_IF_walls</model>
+            <model>P22_IF_walls</model>
+            <model>ground_plane</model>
+          </ignore_obstacles>
+        </plugin>
+      </actor>
+
+      <model name="P22_IF_walls">
+
+          <include>
+              <uri>model://P22_IF_walls</uri>
+          </include>
+          <pose>5 5 0 0 0 0</pose>
+      </model>
+      <model name="CGMClassic">
+          <include>
+              <uri>model://CGMClassic</uri>
+              <static>false</static>
+          </include>
+          <pose>5.05 5.95 0 0 0 -1.56</pose>
+      </model>
+      <model name="VisitorChair_1">
+          <include>
+              <uri>model://VisitorChair</uri>
+          </include>
+          <pose>6.5 4 0 0 0 -1.57</pose>
+      </model>
+      <model name="VisitorChair_2">
+          <include>
+              <uri>model://VisitorChair</uri>
+          </include>
+          <pose>6.5 5 0 0 0 -1.57</pose>
+      </model>
+      <model name="Chair">
+          <include>
+              <uri>model://Chair</uri>
+          </include>
+          <pose>4 6 0 0 0 -1.2</pose>
+      </model>
+      <model name="IVStand">
+          <include>
+              <uri>model://IVStand</uri>
+              <static>false</static>
+          </include>
+          <pose>6.6 5.5 0.000179 0 0 0</pose>
+      </model>
+      <model name="Shower">
+          <include>
+              <uri>model://Shower</uri>
+          </include>
+          <pose>3.5 3.6 0 0 0 0</pose>
+      </model>
+      <model name="Toilet">
+          <include>
+              <uri>model://Toilet</uri>
+              <static>false</static>
+          </include>
+          <pose>2.3 4.6 0 0 0 0</pose>
+      </model>
+      <model name="InstrumentCart">
+          <include>
+              <uri>model://InstrumentCart1</uri>
+          </include>
+          <pose>6.3 6.1 0 0 0 0</pose>
+      </model>
+      <model name="BedsideTable">
+          <include>
+              <uri>model://BedsideTable</uri>
+          </include>
+          <pose>5.8 6.1 0 0 0 0</pose>
+      </model>
+      <model name="WhiteCabinet">
+          <include>
+              <uri>model://WhiteCabinet</uri>
+          </include>
+          <pose>4.6 3.8 0 0 0 3.14</pose>
+      </model>
+      <model name="Walker">
+          <include>
+              <uri>model://Walker</uri>
+              <static>false</static>
+          </include>
+          <pose>5.33 4.03 0 0 0 0.4</pose>
+
+      </model>
+      <model name="BathroomSink">
+          <include>
+              <uri>model://BathroomSink</uri>
+          </include>
+          <pose>2.6 3.5 1 0 0 3.14</pose>
+      </model>
+      <light name="ceiling_light_0" type="spot">
+          <pose>5 5 7 0 0 0</pose>
+          <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+          <specular>0.0941176 0.0941176 0.0941176 1</specular>
+          <direction>0 0 -1</direction>
+          <attenuation>
+              <range>20</range>
+              <constant>0.8</constant>
+              <linear>0.1</linear>
+              <quadratic>0.001</quadratic>
+          </attenuation>
+          <cast_shadows>0</cast_shadows>
+          <spot>
+              <inner_angle>1.0</inner_angle>
+              <outer_angle>2.5</outer_angle>
+              <falloff>1</falloff>
+          </spot>
+      </light>
+      <!-- <light name="ceiling_light_1" type="spot">
+          <pose>-3 -1 2.8 0 -0 0</pose>
+          <diffuse>0.494118 0.494118 0.494118 1</diffuse>
+          <specular>0.0941176 0.0941176 0.0941176 1</specular>
+          <direction>0 0 -1</direction>
+          <attenuation>
+              <range>20</range>
+              <constant>0.8</constant>
+              <linear>0.1</linear>
+              <quadratic>0.001</quadratic>
+          </attenuation>
+          <cast_shadows>0</cast_shadows>
+          <spot>
+              <inner_angle>1.0</inner_angle>
+              <outer_angle>2.5</outer_angle>
+              <falloff>1</falloff>
+          </spot>
+      </light> -->
+    </world>
+</sdf>

@@ -1,0 +1,69 @@
+Object Code,Bed,Commercial Name/Code,Notes,Support Level,Light Intensity,Floor Risk Level,Cad File,QR Code,URL
+1,Bed,Hill-Rom Advanta 2 Med Surg,,1.2,NA,NA,Not Ready,Ready,https://www.hillrom.com/en-us/products/smart-beds-and-surfaces/advanta-2-med-surg-bed/
+2,Light,,,NA,5000,NA,Not Ready,Ready,
+3,Bath,,,0.8,NA,NA,Not Ready,Ready,
+4,Device,Herman Miller Intent Wall Solution,,0.7,NA,NA,Not Ready,Ready,https://www.hermanmiller.com/resources/models/revit-families/
+5,Sink-Bath,,,1.1,NA,NA,Not Ready,Ready,
+6,Bar,,,1.3,NA,NA,Not Ready,Ready,
+7,Bar-vertical,,,1.1,NA,NA,Not Ready,Ready,
+8,Sofa,Steelcase Surround,,1.1,NA,NA,Not Ready,Ready,https://www.steelcase.com/products/lounge-seating/surround/
+9,Toilet,,,0.7,NA,NA,Not Ready,Ready,
+10,Door,,Pull-narrow(bath),0.85,NA,NA,Not Ready,Ready,
+11,Door,,Pull-wide(main),0.9,NA,NA,Not Ready,Ready,
+12,Floor Surface,,Tile,NA,NA,1,NA,NA,
+13,Floor Surface,,Rubber,NA,NA,1.05,NA,NA,
+14,Bed,Stryker S3 Med Surg Bed,,1.2,NA,NA,Not Ready,Ready,https://patientcare.stryker.com/en/products/beds/medical-surgical-beds/s3
+15,Bed,Linet Latera Acute,,1.2,NA,NA,Not Ready,Ready,http://www.linet.com/en/health-care/beds/universal-beds/latera-acute
+16,Chair-Patient,Stryker Symmetry Plus,,1.2,NA,NA,Not Ready,Ready,https://www.steelcase.com/resources/3d-models-cad/?search=Empath
+17,Chair-Patient,Steelcase Empath Recliner,,1.1,NA,NA,Not Ready,Ready,https://www.stryker.com/content/dam/stryker/acute-care/products/recliners/resources/Symmetry%20Plus%20Patient%20Room%20Recliner_spec%20sheet_mkt%20lit-85.pdf
+18,Chair-Patient,Nemschoff Consoul Recliner,,1.1,NA,NA,Not Ready,Ready,https://www.nemschoff.com/products/consoul-recliner
+19,Chair-Visitor,Steelcase Embold Chair Single,,1.05,NA,NA,Not Ready,Ready,https://www.steelcase.com/resources/3d-models-cad/?search=Embold
+20,Chair-Visitor,Stryker Symmetry II Pt.,,1.05,NA,NA,Not Ready,Ready,https://www.stryker.com/content/dam/stryker/acute-care/products/sideseating/resources/Symmetry%20II%20Patient%20and%20Guest%20Seating%20Spec%20Sheet_mkt%20lit-89.PDF
+21,Chair-Visitor,Nemschoff Cities Uptown,,1.05,NA,NA,Not Ready,Ready,https://www.nemschoff.com/products/cities-uptown-patient-chair
+22,Light,,,NA,400,NA,Not Ready,Ready,
+23,Sofa,Nemschoff Brava,,1.1,NA,NA,Not Ready,Ready,https://www.nemschoff.com/products/brava-sleep-settee
+24,Sofa,Stance Healthare Carson,,1.1,NA,NA,Not Ready,Ready,http://stancehealthcare.com/carson_resources.php
+25,Table-Overbed,Stryker Tru-Fit,,0.9,NA,NA,Not Ready,Ready,https://www.stryker.com/content/dam/stryker/acute-care/products/tru-fit/resources/TruFit%20overbed%20tables_Spec%20sheet_mkt%20lit-95.pdf
+26,Table-Overbed,Stance Healthcare Transcend,,0.9,NA,NA,Not Ready,Ready,http://stancehealthcare.com/transcend_resources.php
+27,Table-Occasional,Stance Healthcare Cassia Collection,,0.8,NA,NA,Not Ready,Ready,http://stancehealthcare.com/tables_occasional_resources.php
+28,Cabinet,,,1.1,NA,NA,Not Ready,Ready,
+29,Stand,,,0.6,NA,NA,Not Ready,Ready,
+30,Light,,,NA,300,NA,Not Ready,Ready,
+31,Floor Surface,,Carpet,NA,NA,1.1,NA,NA,
+32,Sink,,,1.1,NA,NA,Not Ready,Ready,
+33,Bath,,seated,0.9,NA,NA,Not Ready,Ready,
+34,Door,,Slide-narrow(bath),0.93,NA,NA,Not Ready,Ready,
+35,Door,,Slide-wide(main),0.96,NA,NA,Not Ready,Ready,
+36,Door,,Push-narrow(bath),0.9,NA,NA,Not Ready,Not Ready,
+37,Door,,Push-wide(main),0.93,NA,NA,Not Ready,Not Ready,
+38,Door,,Pull-wide(bath),0.9,NA,NA,Not Ready,Ready,
+39,,,,,,,,,
+40,,,,,,,,,
+41,,,,,,,,,
+42,,,,,,,,,
+43,,,,,,,,,
+44,,,,,,,,,
+45,,,,,,,,,
+46,,,,,,,,,
+47,,,,,,,,,
+48,,,,,,,,,
+49,,,,,,,,,
+50,,,,,,,,,
+51,,,,,,,,,
+52,,,,,,,,,
+53,,,,,,,,,
+54,,,,,,,,,
+55,,,,,,,,,
+56,,,,,,,,,
+57,,,,,,,,,
+58,,,,,,,,,
+59,,,,,,,,,
+60,,,,,,,,,
+61,,,,,,,,,
+62,,,,,,,,,
+63,,,,,,,,,
+64,,,,,,,,,
+65,,,,,,,,,
+66,,,,,,,,,
+67,,,,,,,,,
+68,,,,,,,,,
