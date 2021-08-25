@@ -3,7 +3,7 @@
 This is a ROS package that represents a risk aware decision making framework for assistive robots. 
 It is authored by [Roya Sabbagh Novin](https://sites.google.com/view/roya-sn), [Amir Yazdani](https://amir-yazdani.github.io/), [Andrew Merryweather](https://mech.utah.edu/faculty/andrew-merryweather/), and [Tucker Hermans](https://robot-learning.cs.utah.edu/thermans) from Utah Robotics Center, University of Utah.
 
-More information about the paper and the method can be found in the [paper website](https://sites.google.com/view/risk_aware_decision_making) and a PDF version is available at the [arXiv pape](https://arxive.org/abs/2010.08124).
+More information about the paper and the method can be found in the [paper website](https://sites.google.com/view/risk_aware_decision_making) and a PDF version is available at the [arXiv pape](https://arxiv.org/abs/2010.08124).
         
         
    [![Sammary](http://img.youtube.com/vi/WmYb1sxsIjg/0.jpg)](https://www.youtube.com/watch?v=WmYb1sxsIjg "Summary")
@@ -60,6 +60,6 @@ Please cite these papers in your publications if it helps your research.
 
 Links to the papers:
 
-- [Risk-Aware Decision Making in Service Robots to Minimize Risk of Patient Falls in Hospitals](https://arxive.org/abs/2010.08124)
+- [Risk-Aware Decision Making in Service Robots to Minimize Risk of Patient Falls in Hospitals](https://arxiv.org/abs/2010.08124)
 
 
